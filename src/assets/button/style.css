@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Thewitcher";
+  src: url("../../assets/fonts/Thewitcher-jnOj.ttf");
+}
+
+.btn-type1 {
+  background: linear-gradient(#b0202d, #661318);
+  color: white;
+  font-family: "Thewitcher";
+  width: 40%;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+
+.btn-type2 {
+  background: white;
+  font-size: 20px;
+  color: #661318;
+  font-family: "Thewitcher";
+  cursor: pointer;
+  border: none;
+  width: 40%;
+  height: 50px;
+  margin-left: 20px;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+

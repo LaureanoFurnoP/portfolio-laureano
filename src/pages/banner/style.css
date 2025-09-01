@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Thewitcher";
+  src: url("../../assets/fonts/Thewitcher-jnOj.ttf");
+}
+
+.banner-Container {
+  background-repeat: no-repeat !important;
+  background-size: cover;
+}
+body {
+  background-color: rgb(150, 150, 150);
+} /*temporal*/
+
+.banner-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Box-containerRunes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  height: 820px;
+}
+
+.box-CSig {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.box-CSig hr {
+  margin: 0;
+  margin-top: 35px;
+  height: 700px;
+}
+.down-Signs {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.line-Down {
+  width: 50%;
+  background-color: white;
+  height: 1px;
+}
+.down-Signs img {
+  border: 1px solid white;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+.upper-Signs {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 4%;
+}
+.line-Top {
+  width: 100%;
+  background-color: white;
+  height: 1px;
+}
+.upper-Signs img {
+  border: 1px solid white;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+.InformationBanner {
+  text-align: start;
+  width: 50%;
+  margin-left: 20px;
+}
+.InformationBanner h1 {
+  font-size: 80px;
+  margin: 0px;
+  font-weight: 900;
+  background: linear-gradient(white, #000000);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.InformationBanner h1 span {
+  background-image: linear-gradient(#ad212a, #470e11);
+  color: transparent;
+  background-clip: text;
+}
+.InformationBanner h3 {
+  font-size: 30px;
+  margin: 0;
+  background: linear-gradient(white, #8a8a8ac2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.InformationBanner h1,
+.InformationBanner h3 {
+  font-family: "Thewitcher";
+  color: white;
+}
+
+.InformationBanner p {
+  color: white;
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 20px;
+}
+
+.btn-Container-banner {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/*signs */
+
+.sign {
+  position: relative;
+  cursor: pointer;
+}
+
+.sign-right {
+  right: 26px;
+}
+
+.sign-left {
+  left: 26px;
+}
+
+.sign-central {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.aard:hover {
+  background-color: rgba(0, 128, 160, 0.445);
+}
+
+.igni:hover {
+  /*the best sign*/
+  background-color: rgba(160, 0, 0, 0.445);
+}
+
+.axii:hover {
+  background-color: rgba(16, 90, 1, 0.445);
+}
+
+.yrden:hover {
+  background-color: rgba(75, 0, 62, 0.445);
+}
+
+.quen:hover {
+  background-color: rgba(90, 81, 1, 0.445);
+}
+
+@media (max-width: 1024px) {
+  .Box-containerRunes {
+    margin: -5px;
+  }
+  .sign-left {
+    left: 5px;
+  }
+  .sign-right {
+    right: 5px;
+  }
+  .box-CSig hr {
+    height: 715px;
+    margin-top: 15px;
+  }
+  .InformationBanner {
+    width: 80%;
+  }
+}
+@media (max-width: 556px) {
+  .InformationBanner {
+    width: 90%;
+  }
+  .box-CSig {
+    margin-top: 36px;
+  }
+  .banner-Container {
+    background-position: center;
+  }
+  .btn-Container-banner {
+    display: flex;
+    gap: 10px;
+    flex-direction: column !important;
+  }
+  .btn-banner.btn-type2 {
+    margin: 0px !important;
+  }
+  .btn-type2,
+  .btn-type1 {
+    width: 76% !important;
+  }
+  .InformationBanner h1 {
+    font-size: 55px;
+  }
+}

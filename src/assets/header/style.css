@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Thewitcher";
+  src: url("../../assets/fonts/Thewitcher-jnOj.ttf");
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  z-index: 2223;
+  transition: all 2s;
+}
+
+.Header-bar {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header-bar ul {
+  display: flex;
+  list-style: none;
+  width: 60%;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.Header-bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Thewitcher";
+  font-size: 20px;
+}
+
+.colorMenuScroll {
+  background: linear-gradient(#ad212a, #470e11);
+  border-bottom: 1px solid white;
+  position: fixed;
+}
+.colorMenuScroll .Header-bar li a:hover {
+  color: black;
+}
+
+.Menu-Responsive {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  right: 1200px;
+  transition: right 2s;
+  margin-top: -10px;
+  background-color: #91000a94;
+}
+.Open-menu{
+    right: 0px !important;
+}
+.Menu-Responsive, .Header-bar svg {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .Menu-Responsive {
+    display: flex;
+    justify-content: center;
+  }
+  .Header-bar svg{
+    display: flex;
+  }
+  .Menu-Responsive ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Thewitcher";
+    font-size: 30px;
+  }
+  .Menu-Responsive ul li {
+    list-style: none;
+  }
+  .Menu-Responsive ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+  }
+  .Header-bar ul {
+    display: none !important;
+  }
+}

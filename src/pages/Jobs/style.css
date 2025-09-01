@@ -1,0 +1,66 @@
+.Jobs-container {
+  background-image: url();
+  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.432)),
+    url("../../images/Background-Job.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jobs {
+  margin: 0px;
+  padding: 6% 0% 6% 0%;
+}
+.jobs-runes {
+  justify-content: start;
+  height: auto;
+}
+.jobs-runes .line-Top {
+  background-color: #e0c27b !important;
+}
+.hr-jobs {
+  border-color: #ffda84 !important;
+  height: auto !important;
+}
+.jobs-right-ard {
+  right: 15px;
+  border-color: #e0c27b !important;
+}
+.Job-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+.Jobs-Containers {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .jobs {
+    padding: 14% 0% 14% 0%;
+  }
+  .Job-list {
+    justify-content: space-between;
+  }
+  .Job-1 .box-about-me {
+    width: 72%;
+  }
+}
+@media (max-width: 578px) {
+  .Job-list {
+    flex-direction: column;
+  }
+  .jobs {
+    padding: 22% 0% 22% 0%;
+  }
+  .Job-1 .box-about-me {
+    width: auto;
+  }
+}
+@media (max-width: 420px) {
+  .jobs {
+    padding: 35% 0% 35% 0%;
+  }
+}

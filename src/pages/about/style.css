@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "Thewitcher";
+  src: url("../../assets/fonts/Thewitcher-jnOj.ttf");
+}
+
+.aboutMe-container {
+  background-image: url("../../images/morhen.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.fogs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 0;
+}
+
+.fog-right {
+  width: 100%;
+  height: 100%;
+}
+
+.fog-animation {
+  animation-name: fog-right-animation;
+  height: 100%;
+  animation-duration: 4s;
+  opacity: 50%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-image: url("../../images/N-rigth.webp");
+}
+
+.fog-animation-remove {
+  animation-name: fog-right-animation-remove;
+  height: 100%;
+  animation-duration: 4s;
+  opacity: 50%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.about-me {
+  position: relative;
+  z-index: 2;
+}
+
+.contain-about-Sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 96%;
+  gap: 20px;
+}
+
+@keyframes fog-right-animation-remove {
+  from {
+    background-position: left;
+    opacity: 50%;
+    background-image: url("../../images/N-rigth.webp");
+  }
+  to {
+    background-position: -700px;
+    opacity: 0%;
+    background-image: url("../../images/N-rigth.webp");
+  }
+}
+
+@keyframes fog-right-animation {
+  from {
+    background-position: -700px;
+    opacity: 0%;
+  }
+  to {
+    background-position: left;
+    opacity: 50%;
+  }
+}
+
+/*about*/
+.box-about-me,
+.box-about-me-skills {
+  position: relative;
+  padding: 30px;
+  color: white;
+  width: 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.63));
+  border-radius: 4px;
+  border-top: 1px solid #e0c27b;
+  z-index: 1;
+  overflow: hidden;
+}
+.box-about-me-skills {
+  background: none;
+  padding: 3px;
+  gap: 1px;
+  display: grid;
+  height: 300px;
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+}
+.box-about-me p,
+.box-about-me-skills p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-about-me::before,
+.box-about-me-skills::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(135deg, #e0c27b, #e0c27b00);
+}
+.box-about-me::after,
+.box-about-me-skills::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(135deg, #e0c27b, #e0c27b00);
+}
+.box-about-me *,
+.box-about-me-skills * {
+  text-align: start;
+}
+
+.box-about-me h2,
+.box-about-me-skills h2,
+.my-studies h2 {
+  font-family: "Thewitcher";
+  font-size: 35px;
+  margin: 10px 0px 0px 0px;
+  background: linear-gradient(white, #2c2c2c);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.000001px #ffffff70;
+}
+
+.box-about-me h2 span,
+.box-about-me-skills h2 span,
+.my-studies h2 span {
+  background: linear-gradient(#ad212a, #470e11);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.box-about-me-skills {
+  width: 100%;
+}
+
+/*skills */
+.box-Skills {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.images-skills-area {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.area-skill {
+  cursor: pointer;
+}
+
+.images-skills-area .area-skill {
+  margin-bottom: 15px;
+}
+
+.images-skills-area .area-skill h3 {
+  font-family: "Oswald";
+  margin: 0px;
+  color: #e0c27bb6;
+}
+
+.area-skill svg {
+  fill: #e0c27bb6;
+}
+
+.area-skill:hover * {
+  fill: white;
+  color: white !important;
+}
+
+.stackSelect * {
+  color: rgb(255, 255, 255) !important;
+  fill: rgb(255, 255, 255) !important;
+}
+.box-about-me.study {
+  width: 40%;
+}
+.my-studies {
+  width: 95%;
+  gap: 10px;
+  z-index: 222;
+  border-top: 1px solid white;
+  display: flex;
+  padding: 40px 0px 20px 0px;
+  flex-direction: column;
+  align-items: start;
+}
+.up-Tec-X {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.SectionInf-Stu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.circlesA {
+  display: flex;
+  width: 60%;
+  justify-content: start;
+}
+
+.circles-wrapper {
+  position: relative;
+  min-width: 700px;
+  max-width: 700px !important;
+  max-height: 600px;
+  min-height: 600px;
+}
+
+.central {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-small {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
+
+.circle-1 {
+  top: 2%;
+  left: 49%;
+  transform: translateX(-50%);
+}
+
+.circle-2 {
+  top: 15%;
+  left: 12%;
+}
+
+.circle-3 {
+  top: 15%;
+  right: 15%;
+}
+
+.circle-4 {
+  top: 45%;
+  left: 1%;
+}
+
+.circle-5 {
+  top: 45%;
+  right: 4%;
+}
+.tecStudy {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)) !important;
+}
+.tecStudy .tech-circle {
+  width: 70px;
+  height: 70px;
+}
+.tecStudy .tech-c {
+  width: 35px;
+  height: 35px;
+}
+.tecs-Responsive-my-study {
+  display: none;
+}
+.box-about-me.study {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Certificado {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+}
+.Certificado:hover {
+  color: red;
+  border-color: red;
+}
+@media (max-width: 1024px) {
+  .about-me {
+    flex-direction: column;
+  }
+  .box-about-me-skills {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    overflow-y: scroll;
+  }
+  .fog-animation {
+    background-size: cover;
+  }
+  .box-Skills,
+  .box-about-me-skills,
+  .images-skills-area {
+    width: 100%;
+    height: auto;
+  }
+  .box-about-me {
+    width: auto;
+  }
+  .SectionInf-Stu {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .box-about-me.study {
+    width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .circle-small {
+    display: none;
+  }
+  .tecs-Responsive-my-study {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .circles-wrapper {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 425px) {
+  .box-about-me-skills {
+    overflow-y: auto;
+    max-height: 300px;
+  }
+}
+@media (max-width: 370px) {
+  .Study-circle {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}

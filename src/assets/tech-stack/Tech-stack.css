@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Thewitcher";
+  src: url("../../assets/fonts/Thewitcher-jnOj.ttf");
+}
+
+.cotainerTech {
+  background: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.63));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cotainerTech img{
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 1024px) {
+  .cotainerTech {
+    height: 150px;
+  }
+}
