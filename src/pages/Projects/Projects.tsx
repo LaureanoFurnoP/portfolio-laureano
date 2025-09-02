@@ -14,6 +14,7 @@ import Cicle_t from '../../assets/circle-t/cicle-t.tsx';
 import visualN from '../../images/projects/VisualNovel.png'
 import serium360 from '../../images/projects/serium.webp'
 import voxaive from '../../images/projects/voxaive.webp'
+import { Image } from 'antd';
 
 const Projects: React.FC = () => {
   const [selected, ] = useState<string | null>("na");
@@ -35,10 +36,13 @@ const Projects: React.FC = () => {
         <h2>MIS <span>TRABAJOS</span></h2>
         <div className='centr-Projects'>
           <div className='box-about-me study project'>
-            <img src={serium360} alt="" />
+            <Image className='ProjectImage'
+              src={serium360}
+            />
             <div className='up-Tec-X'>
               <p>Una landing page para un emprendimiento de seguridad e higiene, donde se presentan sus servicios de manera clara y accesible. La página incluye un formulario de contacto y múltiples opciones de comunicación para facilitar el acceso de los clientes a la empresa.</p>
               <p>Febrero 2025 - Febrero 2025</p>
+              <a className='Certificado' href="https://serium360.com/">Ver página</a>
             </div>
             <div className='tecStudy'>
               <Cicle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
@@ -48,10 +52,13 @@ const Projects: React.FC = () => {
             </div>
           </div>
           <div className='box-about-me study project'>
-            <img src={visualN} alt="" />
+            <Image className='ProjectImage'
+              src={visualN}
+            />
             <div className='up-Tec-X'>
               <p>Echoes of Blood es un proyecto escolar hecho en HTML, CSS y JavaScript vanilla. Te pone en la piel de un detective en Londres, 1910, investigando una serie de asesinatos. Solo se completó el primer acto, por lo que hoy está disponible como demo.</p>
               <p>Abril 2024 - Diciembre 2025</p>
+              <a className='Certificado' href="https://gastonq12.github.io/VisualNovel/">Ver página</a>
             </div>
             <div className='tecStudy'>
               <Cicle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
@@ -61,10 +68,13 @@ const Projects: React.FC = () => {
             </div>
           </div>
           <div className='box-about-me study project'>
-            <img src={voxaive} alt="" />
+            <Image className='ProjectImage'
+            src={voxaive}
+            />
             <div className='up-Tec-X'>
               <p>Diseñé y desarrollé una página web para el grupo de trabajo freelancer que formé junto a excompañeros de la secundaria técnica. En ella presentamos nuestros proyectos de diseño gráfico, diseño web y desarrollo de páginas. El sitio funciona como portafolio colectivo y vitrina para nuestros servicios.</p>
               <p>Noviembre 2024 - Diciembre 2025</p>
+              <a className='Certificado' href="https://voxaive.cloud/">Ver página</a>
             </div>
             <div className='tecStudy'>
               <Cicle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>

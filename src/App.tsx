@@ -7,7 +7,23 @@ import Projects from './pages/Projects/Projects.tsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Contact from './pages/Contact/Contact.tsx';
+import Cicle_t from './assets/circle-t/cicle-t.tsx';
+import circle from './images/Circle_tech.png'
+
+import Instagram from './images/SocialMedia/Instagram.svg'
+import Email from './images/SocialMedia/Email.svg'
+import Linkedin from './images/SocialMedia/Linkedin.svg'
+import serviceC from './images/SocialMedia/service-c.svg'
 function App() {
+  function despliguecont(){
+    const confirm = document.querySelector(".active")
+    if(confirm){
+      document.querySelector('.contactsAbsolute')?.classList.remove('active')
+    }else{
+      document.querySelector('.contactsAbsolute')?.classList.add('active')
+    }
+  }
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -17,6 +33,15 @@ function App() {
       <About />
       <Jobs />
       <Projects />
+      <Contact />
+      <div className='contactsAbsolute'>
+        <div id='desplg-contacts'>
+          <Cicle_t tech={Linkedin} url={circle} isSelected={false} />
+          <Cicle_t tech={Email} url={circle} isSelected={false} />
+          <Cicle_t tech={Instagram} url={circle} isSelected={false} />
+        </div>
+        <Cicle_t onClick={() => despliguecont()} tech={serviceC} url={circle} isSelected={false} />
+      </div>
     </>
   )
 }

@@ -1,0 +1,75 @@
+.cont-Center {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 95%;
+}
+.Contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0px 0% 0px;
+  background: linear-gradient(white, #2c2c2c);
+}
+.freepik h2 {
+  font-family: "Oswald";
+  color: white;
+}
+.freepik {
+  width: 100%;
+  margin-top: 5%;
+  background-color: red;
+}
+.cont-Center form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 50% !important;
+  background-color: white;
+  padding: 1%;
+  border-radius: 10px;
+  gap: 5px;
+}
+.cont-Center form input {
+  width: 99%;
+  height: 40px;
+  padding: 0;
+}
+.cont-Center form input[type="submit"] {
+  background: linear-gradient(#ad212a, #470e11);
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.cont-Center form input[type="submit"]:hover {
+  background: transparent;
+  border: 1px solid #ad212a;
+  color: #ad212a;
+}
+
+.cont-Center h2 {
+  font-family: "Thewitcher";
+  font-size: 35px;
+  margin: 10px 0px 0px 0px;
+  background: linear-gradient(#ad212a, #470e11);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.000001px #ffffff70;
+}
+
+.mensaje{
+  height: 120px !important;
+}
+
+@media(max-width: 828px){
+  .cont-Center form {
+    width: 100% !important;
+    border: 1px solid goldenrod;
+  }
+}

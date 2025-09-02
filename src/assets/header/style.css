@@ -14,7 +14,7 @@ header {
   position: relative;
   width: 100%;
   padding: 10px 0px 10px 0px;
-  z-index: 2223;
+  z-index: 300;
   transition: all 2s;
 }
 

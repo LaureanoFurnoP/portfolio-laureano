@@ -116,7 +116,7 @@ const About: React.FC = () => {
         })
         break;
       case "aprende2":
-        setInfSR({title: "Aprende Programando - Python", date:"Agosto 2022 - Noviembre 2022"})
+        setInfSR({title: "Aprende Programando - Desarrollo Web I: Avanzado", date:"Agosto 2022 - Noviembre 2022"})
         setStudy({
           parrafo: `Cursé Desarrollo Web I Avanzado en el programa Aprendé Programando, este fue un curso avanzado dictado desde agosto a diciembre donde profundicé en HTML y CSS, aprendiendo técnicas de maquetado más complejas, diseño responsivo y buenas prácticas para el desarrollo de sitios web modernos.`,
           parrafo2: ``,
@@ -135,7 +135,7 @@ const About: React.FC = () => {
         <div className='fog-right'></div>
       </div>
       <div className='contain-about-Sections'>
-        <section className='about-me'>
+        <section id='about-me' className='about-me'>
           <div className='box-Skills'>
             <div className='images-skills-area'>
               <div className='area-skill software' onClick={() => selectStack("software")}>

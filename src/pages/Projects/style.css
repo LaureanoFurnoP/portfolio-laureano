@@ -32,9 +32,9 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.project img{
+.project .ProjectImage .ant-image-img{
   height: 250px;
-  
+  width: 100%;
 }
 .project {
   width: auto !important;
