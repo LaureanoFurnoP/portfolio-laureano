@@ -3,7 +3,7 @@ import './style.css'
 //tech
 //software
 import figma from '../../images/tec/figma_logo.svg'
-import drawio from '../../images/tec/Diagrams.png'
+import drawio from '../../images/tec/Diagrams.webp'
 //BACKEND
 import nodeIcon from '../../images/tec/nodeIcon.svg'
 import js from '../../images/tec/jsIcon.svg'
@@ -17,11 +17,11 @@ import bootstrap from '../../images/tec/Bootstrap_logo.svg'
 import postgreSQL from '../../images/tec/Postgresql_elephant.svg'
 //import mysql from '../../images/tec/MySQL-logo.svg'
 //techEnd
-import circle from '../../images/Circle_tech.png'
+import circle from '../../images/Circle_tech.webp'
 import Cicle_t from '../../assets/circle-t/cicle-t.tsx';
 
-import Schub from '../../images/SchubLogo.png'
-import Freelancer from '../../images/freelancer-logo.png'
+import Schub from '../../images/SchubLogo.webp'
+import Freelancer from '../../images/freelancer-logo.webp'
 
 import igni from '../../images/ignis.webp'
 

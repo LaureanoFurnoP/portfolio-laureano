@@ -9,9 +9,9 @@ import html from '../../images/tec/HTML5_logo_and_wordmark.svg'
 import css from '../../images/tec/CSS.svg'
 //import mysql from '../../images/tec/MySQL-logo.svg'
 //techEnd
-import circle from '../../images/Circle_tech.png'
+import circle from '../../images/Circle_tech.webp'
 import Cicle_t from '../../assets/circle-t/cicle-t.tsx';
-import visualN from '../../images/projects/VisualNovel.png'
+import visualN from '../../images/projects/VisualNovel.webp'
 import serium360 from '../../images/projects/serium.webp'
 import voxaive from '../../images/projects/voxaive.webp'
 import { Image } from 'antd';

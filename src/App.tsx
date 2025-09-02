@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Contact from './pages/Contact/Contact.tsx';
 import Cicle_t from './assets/circle-t/cicle-t.tsx';
-import circle from './images/Circle_tech.png'
+import circle from './images/Circle_tech.webp'
 
 import Instagram from './images/SocialMedia/Instagram.svg'
 import Email from './images/SocialMedia/Email.svg'

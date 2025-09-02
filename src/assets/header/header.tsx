@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 import './style.css'
-import logo from '../../images/LogoLau.png'
+import logo from '../../images/LogoLau.webp'
 const HeaderBar: React.FC = () => {
   const [MenuOp, setMenuOpen] = useState(false)
   function MenuOpen(){
