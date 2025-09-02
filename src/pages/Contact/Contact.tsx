@@ -77,7 +77,7 @@ const Jobs: React.FC = () => {
     AOS.init();
   }, []);
   return (
-    <section className='Contact-container'>
+    <section id='contact' className='Contact-container'>
         <div className='cont-Center'>
           {contextHolder}
           <form onSubmit={handleSubmit} data-aos="fade-right" data-aos-duration="1000">

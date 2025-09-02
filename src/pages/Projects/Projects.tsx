@@ -28,11 +28,11 @@ const Projects: React.FC = () => {
     }
   });
   return (
-    <section className='Projects-container'>
+    <section id='works-projects' className='Projects-container'>
       <div className='fogs-projects'>
         <div className='fog-left'></div>
       </div>
-      <div className='containerTXT-Proj'>
+      <div data-aos="fade-down" data-aos-duration="1000" className='containerTXT-Proj'>
         <h2>MIS <span>TRABAJOS</span></h2>
         <div className='centr-Projects'>
           <div className='box-about-me study project'>

@@ -36,9 +36,9 @@ function App() {
       <Contact />
       <div className='contactsAbsolute'>
         <div id='desplg-contacts'>
-          <Cicle_t tech={Linkedin} url={circle} isSelected={false} />
-          <Cicle_t tech={Email} url={circle} isSelected={false} />
-          <Cicle_t tech={Instagram} url={circle} isSelected={false} />
+          <Cicle_t onClick={() => location.href = 'https://www.linkedin.com/in/laureano-furno-47b76730a/'} tech={Linkedin} url={circle} isSelected={false} />
+          <Cicle_t onClick={() => location.href = 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBXlHJzcZvGQgrZwvrJrdktHsCbnTMLSMMQLZprrtvRPGbrbnBFvMkZmlrCJQnRzTtXB'} tech={Email} url={circle} isSelected={false} />
+          <Cicle_t onClick={() => location.href = 'https://www.instagram.com/laureano20fg/'} tech={Instagram} url={circle} isSelected={false} />
         </div>
         <Cicle_t onClick={() => despliguecont()} tech={serviceC} url={circle} isSelected={false} />
       </div>

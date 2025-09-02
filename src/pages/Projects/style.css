@@ -36,6 +36,9 @@
   height: 250px;
   width: 100%;
 }
+#works-projects {
+  scroll-margin-top: 90px;
+}
 .project {
   width: auto !important;
 }

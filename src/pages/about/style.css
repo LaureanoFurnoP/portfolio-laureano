@@ -148,7 +148,9 @@
   -webkit-background-clip: text;
   -webkit-text-stroke: 0.000001px #ffffff70;
 }
-
+#about-me{
+  scroll-margin-top: 130px;
+}
 .box-about-me h2 span,
 .box-about-me-skills h2 span,
 .my-studies h2 span {
@@ -300,6 +302,7 @@
 }
 .Certificado {
   color: white;
+  font-family: 'Oswald';
   border: 1px solid white;
   padding: 10px;
   width: 100px;

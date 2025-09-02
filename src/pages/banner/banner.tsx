@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import HeaderBar from '../../assets/header/header';
 import imageBanner from '../../images/banner-image.webp'
 import './style.css'
@@ -9,8 +9,13 @@ import igni from '../../images/ignis.webp'
 import axii from '../../images/axii.webp'
 import quen from '../../images/quen.webp'
 import yrden from '../../images/yrden.webp'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Banner: React.FC = () => {
+
+useEffect(() => {
+    AOS.init();
+}, []);
   return (
     <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.86)), url(${imageBanner})`}} className='banner-Container'>
         <HeaderBar />
@@ -23,13 +28,13 @@ const Banner: React.FC = () => {
                     <div className='line-Top'></div>
                     <img src={igni} className='sign sign-left igni'  alt="" />
                 </div>
-                <div className='InformationBanner'>
-                    <h3>LAUREANO FURNO</h3>
-                    <h1>FULL-STACK <span>DEVELOPER</span></h1>
-                    <p>Desarrollador full-stack, enfocado en aprender y construir aplicaciones web modernas y funcionales, apasionado de la creación de soluciones a problematicas y con muchas ganas de crecer, aprender y participar en proyectos.</p>
-                    <div className='btn-Container-banner'>
-                        <Button label={'Contact'} url={'#contacts'} type={1}/>
-                        <Button label={'Ver Proyectos'} url={'#contacts'} type={2}/>
+                <div  className='InformationBanner'>
+                    <h3 data-aos="fade-right" data-aos-duration="1000">LAUREANO FURNO</h3>
+                    <h1 data-aos="fade-right" data-aos-duration="1400">FULL-STACK <span>DEVELOPER</span></h1>
+                    <p data-aos="fade-right" data-aos-duration="1600">Desarrollador full-stack, enfocado en aprender y construir aplicaciones web modernas y funcionales, apasionado de la creación de soluciones a problematicas y con muchas ganas de crecer, aprender y participar en proyectos.</p>
+                    <div data-aos="fade-right" data-aos-duration="1900" className='btn-Container-banner'>
+                        <Button label={'Contact'} url={'#contact'} type={1}/>
+                        <Button label={'Ver Proyectos'} url={'#works-projects'} type={2}/>
                     </div>
                 </div>
                 <div className='down-Signs'>

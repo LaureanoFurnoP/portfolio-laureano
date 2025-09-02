@@ -5,7 +5,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+#Jobsc{
+  scroll-margin-top: 90px;
+}
 .jobs {
   margin: 0px;
   padding: 6% 0% 6% 0%;

@@ -136,7 +136,7 @@ const About: React.FC = () => {
       </div>
       <div className='contain-about-Sections'>
         <section id='about-me' className='about-me'>
-          <div className='box-Skills'>
+          <div  data-aos="fade-right" data-aos-duration="1000" className='box-Skills'>
             <div className='images-skills-area'>
               <div className='area-skill software' onClick={() => selectStack("software")}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M280-332h260q37.8 0 63.9-26.61t26.1-64.5Q630-461 602.94-487T538-513h-9l-1-9q-7-48-43.26-79-36.27-31-84.62-31Q362-632 331-611.5 300-591 283-557l-3 5-6 1q-43.79 1.83-73.89 33.48Q170-485.88 170-441.86 170-396 202.08-364q32.09 32 77.92 32Zm0-60q-21.25 0-35.62-14.32Q230-420.65 230-441.82q0-21.18 14.38-35.68Q258.75-492 280-492h40q0-33.14 23.4-56.57T399.9-572q33.1 0 56.6 23.43T480-492v40h60q13 0 21.5 8.5T570-422q0 13-8.5 21.5T540-392H280Zm8 352v-60h62v-104H100q-24 0-42-18t-18-42v-436q0-24 18-42t42-18h600q24 0 42 18t18 42v436q0 24-18 42t-42 18H450v104h61v60H288Zm572-369v-451H204v-60h656q24 0 42 18t18 42v451h-60ZM100-264h600v-436H100v436Zm300-218Z"/></svg>
@@ -162,7 +162,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className='box-about-me'>
+          <div data-aos="fade-left" data-aos-duration="1000" className='box-about-me'>
             <h2>SOBRE <span>MI</span></h2>
             <p>Soy Laureano Furno, desarrollador full-stack. Recién me gradué de una escuela técnica en computación, donde aprendí sobre desarrollo web, Java, Python, bases de datos como MySQL, metodologías ágiles y cómo documentar y diagramar proyectos.</p>
             <p>Me gusta estar siempre en movimiento en el mundo IT: miro contenido, sigo eventos, y hago cursos o capacitaciones sobre todo lo que me llama la atención. Disfruto aprender, crear y meterme de lleno en los proyectos que me desafían.</p>
@@ -171,7 +171,7 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        <section className='my-studies'>
+        <section data-aos="fade-up" data-aos-duration="1000" className='my-studies'>
           <h2>Mis <span>Estudios</span></h2>
           <div className='SectionInf-Stu'>
             <div className='box-about-me study'>

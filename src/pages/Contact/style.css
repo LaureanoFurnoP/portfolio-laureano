@@ -30,6 +30,7 @@
   width: 50% !important;
   background-color: white;
   padding: 1%;
+  box-shadow: #2c2c2c 0px 5px 20px;
   border-radius: 10px;
   gap: 5px;
 }
@@ -66,10 +67,15 @@
 .mensaje{
   height: 120px !important;
 }
-
+#contact {
+  scroll-margin-top: 90px;
+}
 @media(max-width: 828px){
   .cont-Center form {
-    width: 100% !important;
+    width: 97% !important;
     border: 1px solid goldenrod;
+  }
+  .rc-anchor-normal{
+    width: 280px !important;
   }
 }

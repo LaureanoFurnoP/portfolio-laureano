@@ -29,7 +29,7 @@ const Jobs: React.FC = () => {
   const [selected, ] = useState<string | null>("na");
 
   return (
-    <section className='Jobs-container'>
+    <section id='Jobsc' className='Jobs-container'>
         <div className='box-CSig jobs'>
             <hr className='hr-jobs'/>
             
@@ -39,7 +39,7 @@ const Jobs: React.FC = () => {
                     <div className='line-Top'></div>
                 </div>
                 <div className='Jobs-Containers'>
-                  <div className='Job-1 Job-list'>
+                  <div data-aos="fade-right" data-aos-duration="1000" className='Job-1 Job-list'>
                     <Cicle_t tech={Schub} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                     <div className='box-about-me study'>
                       <div className='up-Tec-X'>
@@ -58,7 +58,7 @@ const Jobs: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='Job-1 Job-list'>
+                  <div data-aos="fade-right" data-aos-duration="1000" className='Job-1 Job-list'>
                     <Cicle_t tech={Schub} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                     <div className='box-about-me study'>
                       <div className='up-Tec-X'>
@@ -77,7 +77,7 @@ const Jobs: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='Job-1 Job-list'>
+                  <div data-aos="fade-right" data-aos-duration="1000" className='Job-1 Job-list'>
                     <Cicle_t tech={Freelancer} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                     <div className='box-about-me study'>
                       <div className='up-Tec-X'>

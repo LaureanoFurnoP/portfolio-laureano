@@ -4,7 +4,7 @@
 }
 
 .btn-type1 {
-  background: linear-gradient(#b0202d, #661318);
+  background-color: #83161d ;
   color: white;
   font-family: "Thewitcher";
   width: 40%;
@@ -12,7 +12,12 @@
   font-size: 20px;
   cursor: pointer;
   border: none;
+  transition: all 0.5s;
   clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+
+.btn-type1:hover {
+  background:linear-gradient(135deg, #e0c27b, #e0c27b85);
 }
 
 .btn-type2 {
@@ -24,7 +29,11 @@
   border: none;
   width: 40%;
   height: 50px;
+  transition: all 0.5s;
   margin-left: 20px;
   clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
 }
-
+.btn-type2:hover {
+  background:linear-gradient(135deg, #e0c27b, #e0c27b85);
+  color: white;
+}
