@@ -13,7 +13,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "antd": "^5.27.1",
+    "@ant-design/cssinjs": "^2.0.1",
+    "@ant-design/icons": "^6.1.0",
+    "antd": "^5.29.3",
     "aos": "^2.3.4",
     "axios": "^1.11.0",
     "react": "^19.1.0",
