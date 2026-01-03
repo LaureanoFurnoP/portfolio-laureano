@@ -18,7 +18,7 @@ import postgreSQL from '../../images/tec/Postgresql_elephant.svg'
 //import mysql from '../../images/tec/MySQL-logo.svg'
 //techEnd
 import circle from '../../images/Circle_tech.webp'
-import Cicle_t from '../../assets/circle-t/cicle-t.tsx';
+import Circle_t from '../../assets/circle-t/Circle_t.tsx';
 
 import Schub from '../../images/SchubLogo.webp'
 import Freelancer from '../../images/freelancer-logo.webp'
@@ -40,55 +40,55 @@ const Jobs: React.FC = () => {
                 </div>
                 <div className='Jobs-Containers'>
                   <div data-aos="fade-right" data-aos-duration="1000" className='Job-1 Job-list'>
-                    <Cicle_t tech={Schub} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                    <Circle_t tech={Schub} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                     <div className='box-about-me study'>
                       <div className='up-Tec-X'>
                         <p>Actualmente estoy trabajando como freelancer en Schub, terminando la herramienta que comenzamos en la internship. Estoy desarrollando mejores habilidades para trabajar y también aprendiendo tecnologías como AWS, Kubernetes y Docker.</p>
                         <p>2025-Actualidad</p>
                       </div>
                       <div className='tecStudy'>
-                        <Cicle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={express} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={postgreSQL} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={html} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={nodeIcon} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={drawio} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={react} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={js} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={express} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={postgreSQL} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={html} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={nodeIcon} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={drawio} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={react} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={js} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                       </div>
                     </div>
                   </div>
                   <div data-aos="fade-right" data-aos-duration="1000" className='Job-1 Job-list'>
-                    <Cicle_t tech={Schub} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                    <Circle_t tech={Schub} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                     <div className='box-about-me study'>
                       <div className='up-Tec-X'>
                         <p>Tuve la oportunidad de ampliar significativamente mis conocimientos y, al mismo tiempo, desarrollar habilidades cruciales como la adaptabilidad y el trabajo en equipo. Mis mentores me brindaron una guía invaluable, ayudándome a desenvolverme en el entorno laboral y a aprender sobre tecnologías de vanguardia como API, bases de datos PostgreSQL y las mejores prácticas de seguridad web.</p>
                         <p>2024-2024</p>
                       </div>
                       <div className='tecStudy'>
-                        <Cicle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={express} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={postgreSQL} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={html} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={nodeIcon} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={drawio} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={bootstrap} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={js} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={express} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={postgreSQL} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={html} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={nodeIcon} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={drawio} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={bootstrap} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={js} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                       </div>
                     </div>
                   </div>
                   <div data-aos="fade-right" data-aos-duration="1000" className='Job-1 Job-list'>
-                    <Cicle_t tech={Freelancer} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                    <Circle_t tech={Freelancer} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                     <div className='box-about-me study'>
                       <div className='up-Tec-X'>
                         <p>Trabajé estrechamente con un equipo para crear diseños para folletos, revistas, portadas y otros materiales gráficos y trabajos de desarrollo web.</p>
                         <p>2023-2024</p>
                       </div>
                       <div className='tecStudy'>
-                        <Cicle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={html} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={css} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
-                        <Cicle_t tech={js} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={figma} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={html} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={css} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                        <Circle_t tech={js} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                       </div>
                     </div>
                   </div>

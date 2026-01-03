@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import HeaderBar from '../../assets/header/header';
-import imageBanner from '../../images/banner-image.webp'
 import './style.css'
 import Button from '../../assets/button/button';
 // signs
@@ -17,7 +16,7 @@ useEffect(() => {
     AOS.init();
 }, []);
   return (
-    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.86)), url(${imageBanner})`}} className='banner-Container'>
+    <div className='banner-Container'>
         <HeaderBar />
         <div className='box-CSig'>
             <hr />

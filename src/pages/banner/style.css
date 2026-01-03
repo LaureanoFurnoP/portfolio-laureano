@@ -5,7 +5,10 @@
 
 .banner-Container {
   background-repeat: no-repeat !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.86)),
+    url(../../images/banner-image.webp);
   background-size: cover;
+  background-position: center;
 }
 body {
   background-color: rgb(150, 150, 150);

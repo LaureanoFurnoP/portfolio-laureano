@@ -1,13 +1,13 @@
 import React from 'react';
 import './circle-t.css'
 
-interface Cicle_tProps {
+interface Circle_tProps {
   tech: string;
   url: string;
   onClick?: () => void;
   isSelected: boolean
 }
-const Cicle_t: React.FC <Cicle_tProps> = ({ tech, url, onClick, isSelected  }) => {
+const Circle_t: React.FC <Circle_tProps> = ({ tech, url, onClick, isSelected  }) => {
 
   return (
      <div onClick={onClick} className={`tech-circle ${isSelected ? "circle-selected" : ""}`}>
@@ -17,4 +17,4 @@ const Cicle_t: React.FC <Cicle_tProps> = ({ tech, url, onClick, isSelected  }) =
   );
 };
 
-export default Cicle_t;
+export default Circle_t;

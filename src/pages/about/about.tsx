@@ -19,7 +19,7 @@ import mysql from '../../images/tec/MySQL-logo.svg'
 //techEnd
 import circle from '../../images/Circle_tech.webp'
 import circleGigant from "../../images/Circle-middle.webp"
-import Cicle_t from '../../assets/circle-t/cicle-t.tsx';
+import Circle_t from '../../assets/circle-t/Circle_t.tsx';
 import Et32 from '../../images/Et32.webp'
 import aprende from '../../images/AprendeProg.webp'
 import Circle_gigant from '../../assets/Circle-gigant/circle-gigant.tsx';
@@ -182,15 +182,15 @@ const About: React.FC = () => {
               </div>
               <div className='tecStudy'>
                 {studyinfo.tecs.map(function(tec, index){
-                  return <Cicle_t key={index} tech={tec.tec} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
+                  return <Circle_t key={index} tech={tec.tec} url={circle} isSelected={selected === ""} onClick={() => void("n")}/>
                 })}
               </div>
             </div>
             <div className="circles-wrapper">
               <div className='tecs-Responsive-my-study'>
-                <Cicle_t tech={Et32} url={circle} isSelected={selected === "et32"} onClick={() => selectStudy("et32")} />
-                <Cicle_t tech={aprende} url={circle} isSelected={selected === "aprende2"} onClick={() => selectStudy("aprende2")}/>
-                <Cicle_t tech={aprende} url={circle} isSelected={selected === "aprende1"} onClick={() => selectStudy("aprende1")}/>
+                <Circle_t tech={Et32} url={circle} isSelected={selected === "et32"} onClick={() => selectStudy("et32")} />
+                <Circle_t tech={aprende} url={circle} isSelected={selected === "aprende2"} onClick={() => selectStudy("aprende2")}/>
+                <Circle_t tech={aprende} url={circle} isSelected={selected === "aprende1"} onClick={() => selectStudy("aprende1")}/>
               </div>
               <div className="central">
                 <Circle_gigant 
@@ -200,19 +200,19 @@ const About: React.FC = () => {
                 />
               </div>
               <div className="circle-small circle-1">
-                <Cicle_t tech={Et32} url={circle} isSelected={selected === "et32"} onClick={() => selectStudy("et32")} />
+                <Circle_t tech={Et32} url={circle} isSelected={selected === "et32"} onClick={() => selectStudy("et32")} />
               </div>
               <div className="circle-small circle-2">
-                <Cicle_t tech={aprende} url={circle} isSelected={selected === "aprende2"} onClick={() => selectStudy("aprende2")}/>
+                <Circle_t tech={aprende} url={circle} isSelected={selected === "aprende2"} onClick={() => selectStudy("aprende2")}/>
               </div>
               <div className="circle-small circle-3">
-                <Cicle_t tech={""} url={circle}  isSelected={selected === "none"} onClick={() => selectStudy("none")}/>
+                <Circle_t tech={""} url={circle}  isSelected={selected === "none"} onClick={() => selectStudy("none")}/>
               </div>
               <div className="circle-small circle-4">
-                <Cicle_t tech={aprende} url={circle} isSelected={selected === "aprende1"} onClick={() => selectStudy("aprende1")}/>
+                <Circle_t tech={aprende} url={circle} isSelected={selected === "aprende1"} onClick={() => selectStudy("aprende1")}/>
               </div>
               <div className="circle-small circle-5">
-                <Cicle_t tech={""} url={circle} isSelected={selected === "none1"} onClick={() => selectStudy("none1")}/>
+                <Circle_t tech={""} url={circle} isSelected={selected === "none1"} onClick={() => selectStudy("none1")}/>
               </div>
             </div>
           </div>
