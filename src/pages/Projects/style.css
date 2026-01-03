@@ -1,117 +1,177 @@
-.Projects-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.432)),
-    url("../../images/projects-backg.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.Projects-container .containerTXT-Proj {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.Projects-container {
   position: relative;
-  z-index: 23;
-  padding: 6% 0px 6% 0px;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.map-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marker {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 100;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.marker .tech-circle {
+  width: 100px;
+  height: 100px;
+}
+.marker:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+.marker .tech-circle {
+  background-color: rgba(0, 0, 0, 0.178);
+  border-radius: 100px;
+}
+.seriumIcon {
+  top: 42%;
+  left: 68%;
+}
+
+.visualN {
+  top: 28%;
+  left: 46%;
+}
+
+.voxaive {
+  top: 68%;
+  left: 67%;
+}
+
+.containerTXT-Proj {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6% 0;
   gap: 20px;
 }
 
 .Projects-container h2 {
-  font-family: "Thewitcher";
+  font-family: "Thewitcher", serif;
   font-size: 35px;
   width: 95%;
   text-align: start;
-  margin: 10px 0px 0px 0px;
   background: linear-gradient(white, #2c2c2c);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-stroke: 0.000001px #ffffff70;
 }
+
 .Projects-container h2 span {
   background: linear-gradient(#ad212a, #470e11);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.project .ProjectImage .ant-image-img{
-  height: 250px;
-  width: 100%;
-}
-#works-projects {
-  scroll-margin-top: 90px;
-}
-.project {
-  width: auto !important;
-}
+
 .centr-Projects {
   width: 95%;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.fogs-projects {
+.ProjectImage .ant-image-img {
   width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  z-index: 0;
+  height: 250px;
+  object-fit: cover;
 }
 
-.fog-left {
-  width: 100%;
-  height: 100%;
-}
-
-.fog-animation-left {
-  animation-name: fog-left-animation;
-  animation-duration: 4s;
-  opacity: 30%;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-image: url("../../images/N-rigth.webp");
-  transform: scaleX(-1);
-}
-
-.fog-animation-remove-left {
-  animation-name: fog-left-animation-remove;
-  height: 100%;
-  animation-duration: 4s;
-  opacity: 30%;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-@keyframes fog-left-animation-remove {
-  from {
-    background-position: left;
-    opacity: 50%;
-    background-image: url("../../images/N-rigth.webp");
+@media (max-width: 1024px) {
+  .seriumIcon {
+    top: 42%;
+    left: 83%;
   }
-  to {
-    background-position: -700px;
-    opacity: 0%;
-    background-image: url("../../images/N-rigth.webp");
+  .project {
+    width: 50% !important;
+  }
+  .visualN {
+    top: 28%;
+    left: 72%;
+  }
+
+  .voxaive {
+    top: 68%;
+    left: 84%;
   }
 }
-
-@keyframes fog-left-animation {
-  from {
-    background-position: -700px;
-    opacity: 0%;
+@media (max-width: 950px) {
+  .marker {
+    display: none;
   }
-  to {
-    background-position: left;
-    opacity: 30%;
-  }
-}
-
-@media (max-width: 850px) {
-  .fog-animation-left {
-    background-size: cover;
-  }
-}
-@media (max-width: 425px) {
   .centr-Projects {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    width: 95%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .map-wrapper {
+    display: none;
+  }
+  .Projects-container {
+    background-image: linear-gradient(#0000003b, #0000006e),
+      url(../../images/map.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .project {
+    width: 100% !important;
+  }
+  .Projects-container .containerTXT-Proj {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 23;
+    padding: 6% 0;
+    gap: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .map-wrapper {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .marker {
+    width: 36px;
+    height: 36px;
+  }
+
+  .centr-Projects {
+    grid-template-columns: 1fr;
   }
 }

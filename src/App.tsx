@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Contact from './pages/Contact/Contact.tsx';
-import Cicle_t from './assets/circle-t/cicle-t.tsx';
+import Circle_t from './assets/circle-t/Circle_t.tsx';
 import circle from './images/Circle_tech.webp'
 
 import Instagram from './images/SocialMedia/Instagram.svg'
@@ -36,11 +36,11 @@ function App() {
       <Contact />
       <div className='contactsAbsolute'>
         <div id='desplg-contacts'>
-          <Cicle_t onClick={() => location.href = 'https://www.linkedin.com/in/laureano-furno-47b76730a/'} tech={Linkedin} url={circle} isSelected={false} />
-          <Cicle_t onClick={() => location.href = 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBXlHJzcZvGQgrZwvrJrdktHsCbnTMLSMMQLZprrtvRPGbrbnBFvMkZmlrCJQnRzTtXB'} tech={Email} url={circle} isSelected={false} />
-          <Cicle_t onClick={() => location.href = 'https://www.instagram.com/laureano20fg/'} tech={Instagram} url={circle} isSelected={false} />
+          <Circle_t onClick={() => location.href = 'https://www.linkedin.com/in/laureano-furno-47b76730a/'} tech={Linkedin} url={circle} isSelected={false} />
+          <Circle_t onClick={() => location.href = 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBXlHJzcZvGQgrZwvrJrdktHsCbnTMLSMMQLZprrtvRPGbrbnBFvMkZmlrCJQnRzTtXB'} tech={Email} url={circle} isSelected={false} />
+          <Circle_t onClick={() => location.href = 'https://www.instagram.com/laureano20fg/'} tech={Instagram} url={circle} isSelected={false} />
         </div>
-        <Cicle_t onClick={() => despliguecont()} tech={serviceC} url={circle} isSelected={false} />
+        <Circle_t onClick={() => despliguecont()} tech={serviceC} url={circle} isSelected={false} />
       </div>
     </>
   )
